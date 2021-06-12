@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Kira - Virtual Opera Singer</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/Kira.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Kira.data.br",
+        frameworkUrl: "Build/Kira.framework.js.br",
+        codeUrl: "Build/Kira.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Louis Dutton",
+        productName: "Kira - Virtual Opera Singer",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
